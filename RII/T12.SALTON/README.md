@@ -1,0 +1,3 @@
+# T12
+
+T12) Leia o artigo escrito por Salton, Wong e Yang (1975) e prepare um seminário para explicar a metodologia descrita nele. Use a aLine e a base de dados de A Tribuna1 para reproduzir aquele experimento apresentado na Tabela 1.Como no artigo (SALTON; WONG; YANG, 1975), você deverá imprimir no arquivosaida o fonte LaTeX para montagem da Tabela 1 com os dados processados da base A Tribuna. Além disso, um texto deverá ser acrescentado logo após o código da tabela descrevendo a tabela e discutindo os resultados. Pense no arquivosaida como um arquivo a ser incluido por um template de um artigo maior.

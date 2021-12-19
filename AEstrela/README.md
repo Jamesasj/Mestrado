@@ -1,0 +1,1 @@
+Baseado em: https://github.com/houli/A-Star-Search/blob/master/astar.pl

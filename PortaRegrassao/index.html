@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portal Regressão do James</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <p>This is an example to illustrate the <i>pgrade</i> in action</p>
+    <p>
+        Answer: <input type="text" id="data_in" size="30" required="required" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" value=""/>
+        <input type="button" id="enviar" value="Test it!"/>
+    </p>
+    <pre>
+        <div id="saida"></div>
+    </pre>
+</body>
+
+<script>
+$("#enviar").click(function(){
+    var str_texto = $("#data_in").val();
+    var vet_texto = str_texto.split(" ");
+    var url = "calcular.php?data_in="+ vet_texto.length;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            $("#saida").text(this.responseText);
+        }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+    }
+)
+</script>
+
+</html>

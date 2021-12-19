@@ -1,0 +1,2 @@
+gfortran -o temain_mod temain_mod.f teprob.f
+gfortran -o temain temain.f teprob.f

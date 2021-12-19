@@ -1,0 +1,27 @@
+Aurélia prop ini=cap cap=maxmin simb=alpha prevW=null prevT=null prevCap=null nextW=era nextT=v-fin nextCap=min prev2W=null prev2T=null prev2Cap=null next2W=órfã next2T=n next2Cap=min palpite=O I_PESSOA
+era v-fin ini=ncap cap=min simb=alpha prevW=Aurélia prevT=prop prevCap=maxmin nextW=órfã nextT=n nextCap=min prev2W=null prev2T=null prev2Cap=null next2W=; next2T=punc next2Cap=null palpite=O O
+órfã n ini=ncap cap=min simb=alpha prevW=era prevT=v-fin prevCap=min nextW=; nextT=punc nextCap=null prev2W=Aurélia prev2T=prop prev2Cap=maxmin next2W=e next2T=conj-c next2Cap=min palpite=O O
+; punc ini=simb cap=null simb=null prevW=órfã prevT=n prevCap=min nextW=e nextT=conj-c nextCap=min prev2W=era prev2T=v-fin prev2Cap=min next2W=tinha next2T=v-fin next2Cap=min palpite=O O
+e conj-c ini=ncap cap=min simb=alpha prevW=; prevT=punc prevCap=null nextW=tinha nextT=v-fin nextCap=min prev2W=órfã prev2T=n prev2Cap=min next2W=em next2T=prp next2Cap=min palpite=O O
+tinha v-fin ini=ncap cap=min simb=alpha prevW=e prevT=conj-c prevCap=min nextW=em nextT=prp nextCap=min prev2W=; prev2T=punc prev2Cap=null next2W=sua next2T=pron-det next2Cap=min palpite=O O
+em prp ini=ncap cap=min simb=alpha prevW=tinha prevT=v-fin prevCap=min nextW=sua nextT=pron-det nextCap=min prev2W=e prev2T=conj-c prev2Cap=min next2W=companhia next2T=n next2Cap=min palpite=O O
+sua pron-det ini=ncap cap=min simb=alpha prevW=em prevT=prp prevCap=min nextW=companhia nextT=n nextCap=min prev2W=tinha prev2T=v-fin prev2Cap=min next2W=uma next2T=art next2Cap=min palpite=O O
+companhia n ini=ncap cap=min simb=alpha prevW=sua prevT=pron-det prevCap=min nextW=uma nextT=art nextCap=min prev2W=em prev2T=prp prev2Cap=min next2W=velha next2T=adj next2Cap=min palpite=O O
+uma art ini=ncap cap=min simb=alpha prevW=companhia prevT=n prevCap=min nextW=velha nextT=adj nextCap=min prev2W=sua prev2T=pron-det prev2Cap=min next2W=parenta next2T=n next2Cap=min palpite=O O
+velha adj ini=ncap cap=min simb=alpha prevW=uma prevT=art prevCap=min nextW=parenta nextT=n nextCap=min prev2W=companhia prev2T=n prev2Cap=min next2W=, next2T=punc next2Cap=null palpite=O O
+parenta n ini=ncap cap=min simb=alpha prevW=velha prevT=adj prevCap=min nextW=, nextT=punc nextCap=null prev2W=uma prev2T=art prev2Cap=min next2W=viúva next2T=n next2Cap=min palpite=O O
+, punc ini=simb cap=null simb=null prevW=parenta prevT=n prevCap=min nextW=viúva nextT=n nextCap=min prev2W=velha prev2T=adj prev2Cap=min next2W=, next2T=punc next2Cap=null palpite=O O
+viúva n ini=ncap cap=min simb=alpha prevW=, prevT=punc prevCap=null nextW=, nextT=punc nextCap=null prev2W=parenta prev2T=n prev2Cap=min next2W=D. next2T=n next2Cap=null palpite=O O
+, punc ini=simb cap=null simb=null prevW=viúva prevT=n prevCap=min nextW=D. nextT=n nextCap=null prev2W=, prev2T=punc prev2Cap=null next2W=Firmina next2T=v-fin next2Cap=maxmin palpite=O O
+D. n ini=cap cap=null simb=null prevW=, prevT=punc prevCap=null nextW=Firmina nextT=v-fin nextCap=maxmin prev2W=viúva prev2T=n prev2Cap=min next2W=Mascarenhas next2T=n next2Cap=maxmin palpite=I_PESSOA I_PESSOA
+Firmina v-fin ini=cap cap=maxmin simb=alpha prevW=D. prevT=n prevCap=null nextW=Mascarenhas nextT=n nextCap=maxmin prev2W=, prev2T=punc prev2Cap=null next2W=, next2T=punc next2Cap=null palpite=I_PESSOA I_PESSOA
+Mascarenhas n ini=cap cap=maxmin simb=alpha prevW=Firmina prevT=v-fin prevCap=maxmin nextW=, nextT=punc nextCap=null prev2W=D. prev2T=n prev2Cap=null next2W=que next2T=conj-s next2Cap=min palpite=I_PESSOA I_PESSOA
+, punc ini=simb cap=null simb=null prevW=Mascarenhas prevT=n prevCap=maxmin nextW=que nextT=conj-s nextCap=min prev2W=Firmina prev2T=v-fin prev2Cap=maxmin next2W=sempre next2T=adv next2Cap=min palpite=O O
+que conj-s ini=ncap cap=min simb=alpha prevW=, prevT=punc prevCap=null nextW=sempre nextT=adv nextCap=min prev2W=Mascarenhas prev2T=n prev2Cap=maxmin next2W=a next2T=art next2Cap=min palpite=O O
+sempre adv ini=ncap cap=min simb=alpha prevW=que prevT=conj-s prevCap=min nextW=a nextT=art nextCap=min prev2W=, prev2T=punc prev2Cap=null next2W=acompanhava next2T=v-fin next2Cap=min palpite=O O
+a art ini=ncap cap=min simb=alpha prevW=sempre prevT=adv prevCap=min nextW=acompanhava nextT=v-fin nextCap=min prev2W=que prev2T=conj-s prev2Cap=min next2W=na next2T=n next2Cap=min palpite=O O
+acompanhava v-fin ini=ncap cap=min simb=alpha prevW=a prevT=art prevCap=min nextW=na nextT=n nextCap=min prev2W=sempre prev2T=adv prev2Cap=min next2W=sociedade next2T=n next2Cap=min palpite=O O
+na n ini=ncap cap=min simb=alpha prevW=acompanhava prevT=v-fin prevCap=min nextW=sociedade nextT=n nextCap=min prev2W=a prev2T=art prev2Cap=min next2W=. next2T=punc next2Cap=null palpite=O O
+sociedade n ini=ncap cap=min simb=alpha prevW=na prevT=n prevCap=min nextW=. nextT=punc nextCap=null prev2W=acompanhava prev2T=v-fin prev2Cap=min next2W=null next2T=null next2Cap=null palpite=O O
+. punc ini=simb cap=null simb=null prevW=sociedade prevT=n prevCap=min nextW=null nextT=null nextCap=null prev2W=na prev2T=n prev2Cap=min next2W=null next2T=null next2Cap=null palpite=O O
+

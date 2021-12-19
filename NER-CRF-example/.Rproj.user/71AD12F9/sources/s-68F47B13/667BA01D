@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556991268892.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4291788951",
+    "id" : "667BA01D",
+    "lastKnownWriteTime" : 1557149809,
+    "last_content_update" : 1557149809963,
+    "path" : "C:/Users/james/PROJETOS/TreinoCRFSuite/Programa.R",
+    "project_path" : "Programa.R",
+    "properties" : {
+        "cursorPosition" : "28,5",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "22",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

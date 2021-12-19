@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE colHAREM [
+
+<!ELEMENT colHAREM (DOC)*>
+<!ATTLIST colHAREM
+  versao CDATA #REQUIRED>
+
+<!ELEMENT DOC (#PCDATA|ALT|EM|OMITIDO|P)*> <!ATTLIST DOC DOCID CDATA #REQUIRED>
+
+<!ELEMENT P (#PCDATA|ALT|EM|OMITIDO)*>
+
+<!ELEMENT ALT (#PCDATA|EM|OMITIDO)*>
+
+<!ELEMENT EM (#PCDATA)>
+<!ATTLIST EM
+  ID CDATA #REQUIRED
+  CATEG CDATA #IMPLIED
+  TIPO CDATA #IMPLIED
+  SUBTIPO CDATA #IMPLIED
+  COMENT CDATA #IMPLIED
+  TIPOREL CDATA #IMPLIED
+  COREL CDATA #IMPLIED
+  TEMPO_REF (ENUNCIACAO|TEXTUAL) #IMPLIED
+  SENTIDO (ANTERIOR|POSTERIOR|SIMULT|ANTERIOR_OU_SIMUL|POSTERIOR_OU_SIMULT) #IMPLIED
+  VAL_DELTA CDATA #IMPLIED
+  VAL_NORM CDATA #IMPLIED>
+
+<!ELEMENT OMITIDO (#PCDATA|EM)*>
+]>
+
+<colHAREM versao="PrimeiroHAREM-primeiroevento-5.0-semTEMPO">     
+<DOC DOCID="HAREM-071-00386">
+Uma vila no <EM ID="1289" CATEG="LOCAL|LOCAL" TIPO="ADMINISTRATIVO|GEOGRAFICO">Interior</EM>
+Um simbolo de grande beleza
+As terras de <EM ID="1290" CATEG="LOCAL" TIPO="HUMANO">S. Martinho</EM> foram povoadas desde remotas eras, graças à fertilidade do rio <EM ID="1291" CATEG="LOCAL" TIPO="FISICO">Bestança</EM> e à facilidade de defesas naturais e pontos estratégicos como a <EM ID="1292" CATEG="LOCAL" TIPO="FISICO">Pena</EM> ou <EM ID="1293" CATEG="LOCAL" TIPO="FISICO">Pedra Sobreposta</EM>, em <EM ID="1294" CATEG="LOCAL" TIPO="FISICO">Paus</EM>, e a <EM ID="1295" CATEG="LOCAL" TIPO="FISICO">Mogueira</EM>, perto de <EM ID="1296" CATEG="LOCAL" TIPO="HUMANO">S. Martinho</EM>.
+No morro da <EM ID="1297" CATEG="LOCAL" TIPO="FISICO">Mogueira</EM> há vestígios evidentes da presença dos <EM ID="1298" CATEG="PESSOA" TIPO="GRUPOMEMBRO">Celtas</EM>, e dos <EM ID="1299" CATEG="PESSOA" TIPO="GRUPOMEMBRO">Romanos</EM>.
+Trata-se de um castro romanizado.
+A estes povos seguiram-se os <EM ID="1300" CATEG="PESSOA" TIPO="GRUPOMEMBRO">Suevos</EM>, os <EM ID="1301" CATEG="PESSOA" TIPO="GRUPOMEMBRO">Visigodos</EM>, depois os <EM ID="1302" CATEG="PESSOA" TIPO="GRUPOMEMBRO">Mouros</EM> que lhe deram o nome, e por fim, os povoadores cristãos da <EM ID="1303" CATEG="TEMPO|ACONTECIMENTO" TIPO="PERIODO|EFEMERIDE">Reconquista</EM>.Atendendo ao nome «<EM ID="1304" CATEG="ABSTRACCAO" TIPO="NOME">S. Martinho</EM>», pode concluir-se que deve ter sido paróquia desde os primórdios da cristianização destas paragens.
+<EM ID="1305" CATEG="LOCAL" TIPO="HUMANO">Paus</EM>, <EM ID="1306" CATEG="LOCAL" TIPO="HUMANO">S. João</EM> e <EM ID="1307" CATEG="LOCAL" TIPO="HUMANO">Gosende</EM> eram, nessa época, simples povoados desta freguesia.
+Dada a sua fertilidade, os <EM ID="1308" CATEG="PESSOA" TIPO="GRUPOMEMBRO">Mouros</EM> com todas as suas forças a reconquista cristã, motivo pelo qual, sendo já cristão todo o noroeste(de <EM ID="1309" CATEG="LOCAL" TIPO="HUMANO">Resende</EM> ao <EM ID="1310" CATEG="LOCAL" TIPO="HUMANO">Porto</EM>) e estando ainda <EM ID="1311" CATEG="LOCAL" TIPO="HUMANO">S. Martinho</EM> nas mãos dos <EM ID="1312" CATEG="PESSOA" TIPO="GRUPOMEMBRO">Mouros</EM>, os cristãos de <EM ID="1313" CATEG="LOCAL" TIPO="HUMANO">Resende</EM>, falando de <EM ID="1314" CATEG="LOCAL" TIPO="HUMANO">S. Martinho</EM>, lhe chamavam de «<EM ID="1315" CATEG="ABSTRACCAO" TIPO="NOME">Mouros</EM>».
+Após a reconquista, em <EM ID="1316" CATEG="TEMPO" TIPO="DATA">1058</EM>, tentou-se o repovoamento com a doação de terras a senhores da nobreza, concretamente com as <ALT><EM ID="1317" CATEG="OUTRO">Honras</EM> de <EM ID="1318" CATEG="LOCAL" TIPO="HUMANO">Cardoso</EM>, de <EM ID="1319" CATEG="LOCAL" TIPO="HUMANO">Cantim</EM>, de <EM ID="1320" CATEG="LOCAL" TIPO="HUMANO">Fonseca</EM>, de <EM ID="1321" CATEG="LOCAL" TIPO="HUMANO">Paredes</EM> e de <EM ID="1322" CATEG="LOCAL" TIPO="HUMANO">Temonde</EM>|<EM ID="1323" CATEG="OUTRO">Honras de Cardoso, de Cantim, de Fonseca, de Paredes e de Temonde</EM></ALT>.
+<EM ID="1324" CATEG="LOCAL" TIPO="HUMANO">S. Martinho</EM> foi concelho desde tempos anteriores à nacionalidade, pois recebeu foral de <EM ID="1325" CATEG="PESSOA" TIPO="INDIVIDUAL">Fernando Magno</EM>, confirmado por <EM ID="1326" CATEG="PESSOA" TIPO="INDIVIDUAL">D. Teresa</EM> em <EM ID="1327" CATEG="TEMPO" TIPO="DATA">1 de Março de 1121</EM>, e novo foral do rei <EM ID="1328" CATEG="PESSOA" TIPO="INDIVIDUAL">D. Manuel</EM> em <EM ID="1329" CATEG="TEMPO" TIPO="DATA">20 de Outubro de 1513</EM>.
+Foi também julgado medieval, abrangendo uma longa faixa de território, desde o <EM ID="1330" CATEG="LOCAL" TIPO="FISICO">Douro</EM> à cruz do <EM ID="1331" CATEG="LOCAL" TIPO="FISICO">Rossão</EM> no montemuro, e desde a serra das <EM ID="1332" CATEG="LOCAL" TIPO="FISICO">Meadas</EM> a terras do concelho de <EM ID="1333" CATEG="LOCAL" TIPO="HUMANO">Aregos</EM> e da honra de <EM ID="1334" CATEG="LOCAL" TIPO="HUMANO">Resende</EM>.
+O julgado foi suprimido por decreto de <EM ID="1335" CATEG="TEMPO" TIPO="DATA">28 de Dezembro de 1840</EM> e incorporado na comarca de <EM ID="1336" CATEG="LOCAL" TIPO="HUMANO">Lamego</EM> e o concelho foi extinto em <EM ID="1337" CATEG="TEMPO" TIPO="DATA">24 de Outubro de 1855</EM>, data em que, tanto o concelho como o julgado passaram a fazer parte do concelho e da comarca de <EM ID="1338" CATEG="LOCAL" TIPO="HUMANO">Resende</EM>.
+</DOC>
+</colHAREM>

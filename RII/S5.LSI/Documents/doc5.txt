@@ -1,0 +1,47 @@
+Ola,
+Este é o seminario para a disciplina de recuperação inteligente da informação, ministrada pelo professor phd Elias Oliveira na universidade federal do Espito santo.
+
+Falaremos sobre o artigo Indexing by Latent Semantic Analysis Scott por Deerwester.
+
+O artigo discorcorre sobre uma abordagem que tenta cobrir deficiencias na recuperação de termos, assumindo que existe uma estrutura semantica usando tecnicas estatistica. A abordagem consiste em contruir um espaço "semantico", deixando próximos documentos e termos intimamente associados. Ignora-se os termos menos relevantes. Formatando assim um novo index para recuperação de documentos.
+
+#### Deficiencies of current automatic indexing and retrieval methods ####
+
+O principal problema dos sistema de recuperação da informação é que os as palavras usadas nas querys nem sempre correspondem as palavras indexadas. o uso de sinimos é muito comum nas consultas. Por outro lado uma palavra pode ter muitiplos significados.
+
+tres são os fatores causadores de erros:
+1 - A forma com os termos são indexados é incompleta. Um documento por si, pode não ter todos os termos que os usuarios podem usar para efetuar uma busca
+2 - Falta de tratamento adequado para palavras homógrafas. uma forma de tratamento seria utilizar uma interseçao booleana para desambiguação de termos.
+3 - É a forma como é quantificado a importancia de encontrar duas palavras juntas no mesmo documento e encontra-las separadas. Esse problama dificulta a busca.
+
+#### Rationale of the Latent Semantic Indexing (LSI) method ####
+
+TABELA-1: A tabela apresentada representa esses erros que foram detalhados o documento 1 e 2 seriam tratados como diferentes em uma busco com a query xxxx.
+O principal problema da abordagem classica de de clusterização apresentão uma perspectiva pobre nos seus resultados hierarquicos e não levam em conta a semantica discorrida nos documentos, o autor considerou que este modelo restitivo para esta tarefa.
+
+A abordagem proposta por  Deerwester tras as seguintes diferenças:
+    (1) Examinou-se problemas de tamanho razoável (1000-2000 resumos de documentos; e 5000-7000 termos de índice); 
+    (2) Usou uma representação rica e de alta dimensão (cerca de 100 dimensões) para capturar as relações termo-documento (e isso parece necessário para o sucesso); 
+    (3) Aplicou uma técnica matemática que represente explicitamente os termos e documentos no mesmo espaço; 
+    (4) Recuperou documentos de termos de consulta diretamente, sem rotação ou interpretação dos eixos subjacentes e sem usar clusters de documentos intermediários.
+
+A ideia Deerwester é de que um modelo ideal satisfaça tres criterios: 
+    1 - Apresentar uma representação rica , que na real fuja da pobreza do modelo hierarquico
+    2 - Representação explícita de termos e documentos, uma representação multidimensional, ou fatorial, ou uma arvore foram tidos como candidados a este quesito.
+    3 - O modelo de ter capacidade computacional para grandes conjuntos de dados.
+Deerwester encontrou no singular value decomposition (SVD) um modelo que consegue cumprir com esses tres criterios. 
+
+#### SVD or two-mode factor analysis ####
+Veremos então como esse modelo é aplicado ao contexto de RII:
+Tudo tem inicio na matrix documento e essa matriz é submetida ao SVD para derivar ao LSI, aproximando o problema dos campos da matemática e da estatistica. A aplicação da tecnica de svd apresenta uma redução da dimensionalidade.
+Para submeter uma consulta a este modelo a query é formulado como um pseudo-documento como uma soma ponderada de vetores. Então é retornado os documentos mais próximos a este pseudo-documento.
+
+> X é uma matrix termo-documento é rankiado
+> T0 é a matrix X rankiado e seu termos e documentos menos singulares são cortados
+> S0 é uma matrix permutada para ter sua diagonal hortogonal
+> D0 é uma matrix que tem o indice do rank dos termos e os documentos.
+
+A multiplicação da matrix T pela matrix D remonta a matrix X com algumas faltas.
+
+
+

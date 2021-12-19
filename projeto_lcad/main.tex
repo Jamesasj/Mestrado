@@ -1,0 +1,205 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}  
+\usepackage{algpseudocode,algorithm}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\newcommand{\knn}{$k$NN}
+\newcommand{\nome}{BT-\knn{}}
+
+% Pacote para a definição de novas cores
+\usepackage{xcolor}
+% Definindo novas cores
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+\definecolor{darkgreen}{rgb}{0.0, 0.2, 0.13}
+%\definecolor{oldmauve}{rgb}{0.4, 0.19, 0.28}
+% Configurando layout para mostrar codigos Java
+\usepackage{listings}
+
+\newcommand{\estiloJava}{
+\lstset{
+    language=Java,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{jpurple}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{verde},
+    morecomment=[s][\color{blue}]{/**}{*/},
+    extendedchars=true,
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    backgroundcolor=\color{cyan!10},
+    breakautoindent=true,
+    captionpos=b,
+    xleftmargin=0pt,
+    tabsize=2
+}}
+
+\newcommand{\estiloR}{
+  \lstset{ %
+    language=R,                     % the language of the code
+    basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+    numbers=left,                   % where to put the line-numbers
+    numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+    stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                    % will be numbered
+    numbersep=5pt,                  % how far the line-numbers are from the code
+    backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+    showspaces=false,               % show spaces adding particular underscores
+    showstringspaces=false,         % underline spaces within strings
+    showtabs=false,                 % show tabs within strings adding particular underscores
+    frame=single,                   % adds a frame around the code
+    rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+    tabsize=2,                      % sets default tabsize to 2 spaces
+    captionpos=b,                   % sets the caption-position to bottom
+    breaklines=true,                % sets automatic line breaking
+    breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+    title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                    % also try caption instead of title
+    keywordstyle=\color{blue},      % keyword style
+    commentstyle=\color{darkgreen},   % comment style
+    stringstyle=\color{red},      % string literal style
+    escapeinside={\%*}{*)},         % if you want to add a comment within your code
+    morekeywords={*,...}          % if you want to add more keywords to the set
+}}
+
+\renewcommand{\lstlistingname}{Listagem}
+
+\lstset{ %
+%  language=Octave,                % the language of the code
+  basicstyle=\scriptsize,           % the size of the fonts that are used for the code
+  frame=single,                   % adds a frame around the code
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  escapeinside={\%*}{*)},            % if you want to add LaTeX within your code
+  extendedchars=true,
+}  
+
+%Pseudo-código
+% Declaracoes em Português
+\algrenewcommand\algorithmicend{\textbf{fim}}
+\algrenewcommand\algorithmicdo{\textbf{faça}}
+\algrenewcommand\algorithmicwhile{\textbf{enquanto}}
+\algrenewcommand\algorithmicfor{\textbf{para}}
+\algrenewcommand\algorithmicif{\textbf{se}}
+\algrenewcommand\algorithmicthen{\textbf{então}}
+\algrenewcommand\algorithmicelse{\textbf{senão}}
+\algrenewcommand\algorithmicreturn{\textbf{devolve}}
+\algrenewcommand\algorithmicfunction{\textbf{função}}
+
+% Rearranja os finais de cada estrutura
+\algrenewtext{EndWhile}{\algorithmicend\ \algorithmicwhile}
+\algrenewtext{EndFor}{\algorithmicend\ \algorithmicfor}
+\algrenewtext{EndIf}{\algorithmicend\ \algorithmicif}
+\algrenewtext{EndFunction}{\algorithmicend\ \algorithmicfunction}
+
+% O comando For, a seguir, retorna 'para #1 -- #2 até #3 faça'
+\algnewcommand\algorithmicto{\textbf{até}}
+\algrenewtext{For}[3]%
+{\algorithmicfor\ #1 $\gets$ #2 \algorithmicto\ #3 \algorithmicdo}
+
+\sloppy
+
+\title{Classificação de Texto: \\ Acelerando o \knn{} com uma Estrutura de Árvore}
+
+%Trecho tirado do e-mail recebido pela organização:
+
+%Todos os trabalhos devem ser submetidos de forma anônima, ou seja, devem
+%evitar qualquer informação no cabeçalho do artigo, no texto e nas
+%referências que vinculem o artigo à identidade dos autores e suas
+%instituições. Trabalhos que não cumprirem esta regra serão rejeitados.
+
+
+%Devo deixar o trecho abaixo?
+%\author{Lucas B. de Andrade\inst{1}, Elias de Oliveira\inst{1}}
+
+%É o programa de pós-graduação mesmo?
+%\address{Programa de Pós-Graduação em Informática
+%    \\Universidade Federal do Espírito Santo (UFES)
+%    \\CEP 29.075-910 - Vitória - ES - Brasil
+%  \email{lucasbertandrade@gmail.com,
+%            elias@lcad.inf.ufes.br }
+%}
+
+\begin{document} 
+
+\title{Projeto Exemplo 
+}
+
+\author{\IEEEauthorblockN{Lucas Andrade}
+\IEEEauthorblockA{\textit{Departamento de Informática} \\
+\textit{UFES}\\
+Vitória \\
+lucasbertandrade@gmail.com}
+\and
+\IEEEauthorblockN{Elias Oliveira}
+\IEEEauthorblockA{\textit{Departamento de} \\
+\textit{UFES}\\
+Vitória \\
+email address}
+\and
+\IEEEauthorblockN{Matheus Nogueira}
+\IEEEauthorblockA{\textit{Departamento de Informática} \\
+\textit{UFES}\\
+Vitória \\
+email address}
+\and
+\IEEEauthorblockN{Marcos Spalenza}
+\IEEEauthorblockA{\textit{Departamento de Informática} \\
+\textit{UFES}\\
+Vitória \\
+email address}
+}
+
+\maketitle
+
+%\input{00.1-abstract.tex}
+     
+\input{00.2-resumo.tex}
+
+\begin{IEEEkeywords}
+inteligência artificial, classificação automática, estrutura de dados
+\end{IEEEkeywords}
+
+\section{Problema}
+
+\input{01-introducao.tex}
+
+\section{Solução}
+
+\input{02-trabalhos.tex}
+
+\section{Resultados}
+
+\input{03-classificacao.tex}
+
+%\section{O Método}
+
+%\input{04-metodo.tex}
+
+%\section{Experimentos}
+
+%\input{05-experimentos.tex}
+
+%\section{Conclusão}
+
+%\input{06-conclusao.tex}
+
+\bibliographystyle{IEEEtran}
+\bibliography{07-referencias}
+
+\end{document}

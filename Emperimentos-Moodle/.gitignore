@@ -1,0 +1,7 @@
+upload.php
+moodle.sql
+download.php
+lib/*
+ws/*
+arquivos/*
+*.conf

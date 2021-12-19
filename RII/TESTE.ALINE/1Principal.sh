@@ -1,0 +1,1 @@
+aLine -i -l indice.dat -d resultado

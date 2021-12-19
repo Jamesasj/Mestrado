@@ -1,0 +1,10 @@
+Entre prp ini=cap cap=maxmin simb=alpha prevW=null prevT=null prevCap=null nextW=1530 nextT=num nextCap=null prev2W=null prev2T=null prev2Cap=null next2W=e next2T=conj-c next2Cap=min palpite=O
+1530 num ini=simb cap=null simb=num prevW=Entre prevT=prp prevCap=maxmin nextW=e nextT=conj-c nextCap=min prev2W=null prev2T=null prev2Cap=null next2W=1577 next2T=num next2Cap=null palpite=O
+e conj-c ini=ncap cap=min simb=alpha prevW=1530 prevT=num prevCap=null nextW=1577 nextT=num nextCap=null prev2W=Entre prev2T=prp prev2Cap=maxmin next2W=funcionou next2T=v-fin next2Cap=min palpite=O
+1577 num ini=simb cap=null simb=num prevW=e prevT=conj-c prevCap=min nextW=funcionou nextT=v-fin nextCap=min prev2W=1530 prev2T=num prev2Cap=null next2W=uma next2T=art next2Cap=min palpite=O
+funcionou v-fin ini=ncap cap=min simb=alpha prevW=1577 prevT=num prevCap=null nextW=uma nextT=art nextCap=min prev2W=e prev2T=conj-c prev2Cap=min next2W=imprensa next2T=n next2Cap=min palpite=O
+uma art ini=ncap cap=min simb=alpha prevW=funcionou prevT=v-fin prevCap=min nextW=imprensa nextT=n nextCap=min prev2W=1577 prev2T=num prev2Cap=null next2W=no next2T=n next2Cap=min palpite=O
+imprensa n ini=ncap cap=min simb=alpha prevW=uma prevT=art prevCap=min nextW=no nextT=n nextCap=min prev2W=funcionou prev2T=v-fin prev2Cap=min next2W=claustro next2T=n next2Cap=min palpite=O
+no n ini=ncap cap=min simb=alpha prevW=imprensa prevT=n prevCap=min nextW=claustro nextT=n nextCap=min prev2W=uma prev2T=art prev2Cap=min next2W=. next2T=punc next2Cap=null palpite=O
+claustro n ini=ncap cap=min simb=alpha prevW=no prevT=n prevCap=min nextW=. nextT=punc nextCap=null prev2W=imprensa prev2T=n prev2Cap=min next2W=null next2T=null next2Cap=null palpite=O
+. punc ini=simb cap=null simb=null prevW=claustro prevT=n prevCap=min nextW=null nextT=null nextCap=null prev2W=no prev2T=n prev2Cap=min next2W=null next2T=null next2Cap=null palpite=O

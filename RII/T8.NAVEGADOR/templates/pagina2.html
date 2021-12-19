@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}" crossorigin="anonymous">
+    <script src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+
+    <title>RII</title>
+</head>
+<body>
+    <div>
+        <a class="retornar" href="/">Voltar</a>
+    </div>
+    <div>
+        Resultado
+    </div>
+</body>
+
+<script>
+
+    $(document).ready(function(){
+        var data = new Date();
+        var dados= {pagina:"",entrada:0, saida:0, tempo:0}
+        var lista = new Array();
+        dados.pagina = "pagina2";
+        dados.entrada = data.getTime();
+        lista.push(dados);
+        localStorage.setItem("dados", JSON.stringify(dados));
+    });
+
+    $(".retornar").click(function(){
+        var data = new Date();
+        dados = JSON.parse(localStorage.getItem("dados"));
+        dados.saida = data.getTime();
+        dados.tempo = dados.saida - dados.entrada;
+        localStorage.setItem("dados",JSON.stringify(dados));
+        
+        $.post("/gravar", dados);
+
+    })
+</script>
+</html>

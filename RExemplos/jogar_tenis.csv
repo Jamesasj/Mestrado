@@ -1,0 +1,15 @@
+Aparencia;temperatura;umidade;vento;jogar_tenis
+ensolarado;quente;alta;fraco;não
+ensolarado;quente;alta;forte;não
+nublado;quente;alta;forte;sim
+chuvoso;moderado;alta;fraco;sim
+chuvoso;fresco;normal;fraco;sim
+chuvoso;fresco;normal;forte;não
+nublado;fresco;normal;forte;sim
+ensolarado;moderado;alta;fraco;não
+ensolarado;fresco;normal;fraco;sim
+chuvoso;moderado;normal;fraco;sim
+ensolarado;moderado;normal;forte;sim
+nublado;moderado;alta;forte;sim
+nublado;quente;normal;fraco;sim
+chuvoso;moderado;alta;forte;não

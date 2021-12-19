@@ -1,0 +1,4 @@
+Mosteiro n ini=cap cap=maxmin simb=alpha prevW=null prevT=null prevCap=null nextW=de nextT=prp nextCap=min prev2W=null prev2T=null prev2Cap=null next2W=Santa next2T=prop next2Cap=maxmin palpite=O
+de prp ini=ncap cap=min simb=alpha prevW=Mosteiro prevT=n prevCap=maxmin nextW=Santa nextT=prop nextCap=maxmin prev2W=null prev2T=null prev2Cap=null next2W=Cruz next2T=prop next2Cap=maxmin palpite=O
+Santa prop ini=cap cap=maxmin simb=alpha prevW=de prevT=prp prevCap=min nextW=Cruz nextT=prop nextCap=maxmin prev2W=Mosteiro prev2T=n prev2Cap=maxmin next2W=null next2T=null next2Cap=null palpite=O
+Cruz prop ini=cap cap=maxmin simb=alpha prevW=Santa prevT=prop prevCap=maxmin nextW=null nextT=null nextCap=null prev2W=de prev2T=prp prev2Cap=min next2W=null next2T=null next2Cap=null palpite=O

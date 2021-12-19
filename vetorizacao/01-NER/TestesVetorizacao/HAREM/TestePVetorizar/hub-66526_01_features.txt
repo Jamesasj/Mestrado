@@ -1,0 +1,1 @@
+História n ini=cap cap=maxmin simb=alpha prevW=null prevT=null prevCap=null nextW=null nextT=null nextCap=null prev2W=null prev2T=null prev2Cap=null next2W=null next2T=null next2Cap=null palpite=O
